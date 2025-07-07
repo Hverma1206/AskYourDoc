@@ -2,7 +2,13 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "http://13.61.190.135:5000/api/:path*"
+      "destination": "http://13.61.190.135:5000/api/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "ask-your-doc-nu.vercel.app"
+        }
+      ]
     }
   ]
 }
